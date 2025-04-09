@@ -1,0 +1,32 @@
+<Configuration ID="47f18de8-da3d-4716-ad8a-18f81a685a68">
+  <Info Description="RMM deployment for this specific 32-bit Office365 package that includes Project 2019" />
+  <Add OfficeClientEdition="32" Channel="Current">
+    <Product ID="O365BusinessRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+    <Product ID="ProjectStd2019Volume" PIDKEY="BX7KN-PYH8Y-PB334-V2DWW-J8HPP">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="Publisher" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="FALSE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="1" />
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <Setup Name="Company" Value="Hausmann Construction" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+  </AppSettings>
+</Configuration>
